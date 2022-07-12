@@ -12,6 +12,7 @@
     pkgs.speedtest-cli
     pkgs.comma
     pkgs.git
+    pkgs.nodejs-16_x
   ];
   
 
