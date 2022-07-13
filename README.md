@@ -31,3 +31,8 @@ nix-env --set-flag priority 0 nix
 ```bash
 home-manager switch
 ```
+
+## change shell to zsh
+```bash
+sudo chsh -s $(which zsh) $USER
+```
