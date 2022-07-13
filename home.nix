@@ -19,8 +19,14 @@
 
   # Raw configuration files
   home.file.".gitconfig".source = ./gitconfig;
+  home.file.".zshrc".source = ./zshrc;
 
-
+   programs.zsh = {
+      enable = true;
+      enableAutosuggestions = true;
+      enableCompletion = true;
+      oh-my-zsh.enable = true;
+    };
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
