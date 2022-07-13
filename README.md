@@ -32,3 +32,12 @@ home-manager switch
 ```bash
 sudo chsh -s $(which zsh) $USER
 ```
+
+If you meet an error when change shell, changing `/etc/pam.d/chsh` from:
+```
+auth       required   pam_shells.so
+```
+to
+```
+auth       sufficient   pam_shells.so
+```
