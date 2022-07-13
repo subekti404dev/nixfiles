@@ -19,3 +19,14 @@ nix-channel --update &&\
 nix-shell '<home-manager>' -A install
 ```
 
+## clone repo and make symlink
+```bash
+git clone https://github.com/subekti404dev/nixfiles.git ~/nixfiles &&\
+rm -rf ~/.config/nixpkgs &&\
+ln -s ~/nixfiles ~/.config/nixpkgs &&\
+```
+
+## home switxh
+```bash
+home-manager switch
+```
