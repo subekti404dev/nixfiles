@@ -26,7 +26,7 @@ rm -rf ~/.config/nixpkgs &&\
 ln -s ~/nixfiles ~/.config/nixpkgs &&\
 ```
 
-## home switxh
+## home switch
 ```bash
 home-manager switch
 ```
