@@ -19,6 +19,7 @@ rm -rf ~/.config/nixpkgs &&\
 ln -s ~/nixfiles ~/.config/nixpkgs &&\
 
 # install home-manager
+nix-env --set-flag priority 0 nix &&\
 nix-shell '<home-manager>' -A install &&\
 
 home-manager switch &&\
