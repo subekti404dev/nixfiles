@@ -23,7 +23,8 @@ nix-shell '<home-manager>' -A install
 ```bash
 git clone https://github.com/subekti404dev/nixfiles.git ~/nixfiles &&\
 rm -rf ~/.config/nixpkgs &&\
-ln -s ~/nixfiles ~/.config/nixpkgs
+ln -s ~/nixfiles ~/.config/nixpkgs &&\
+nix-env --set-flag priority 0 nix
 ```
 
 ## home switch
