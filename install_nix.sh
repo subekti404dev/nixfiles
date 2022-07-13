@@ -12,14 +12,14 @@ nix-channel --update &&\
 echo 'export NIX_PATH=${NIX_PATH:+$NIX_PATH:}$HOME/.nix-defexpr/channels' >> ~/.bash_profile &&\
 . ~/.bash_profile &&\
 
-# install home-manager
-nix-shell '<home-manager>' -A install &&\
-
 # remove template nixpkgs
 rm -rf ~/.config/nixpkgs &&\
 
 # create symbolic link to nixpkgs
 ln -s ~/nixfiles ~/.config/nixpkgs &&\
+
+# install home-manager
+nix-shell '<home-manager>' -A install &&\
 
 home-manager switch &&\
 sudo chsh -s $(which zsh) $USER
