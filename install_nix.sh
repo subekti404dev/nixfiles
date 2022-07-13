@@ -6,3 +6,12 @@ nix-channel --add https://github.com/nix-community/home-manager/archive/master.t
 nix-channel --update
 
 nix-shell '<home-manager>' -A install
+
+# remove template nixpkgs
+rm -rf ~/.config/nixpkgs
+
+# create symbolic link to nixpkgs
+ln -s ~/nixfiles ~/.config/nixpkgs
+
+home-manager switch
+sudo chsh -s $(which zsh) $USER
