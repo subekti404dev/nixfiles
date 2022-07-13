@@ -14,7 +14,6 @@
     pkgs.speedtest-cli
     pkgs.nodejs-16_x
     pkgs.yarn
-    pkgs.nodePackages.npm
   ];
   
 
