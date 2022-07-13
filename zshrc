@@ -1,9 +1,14 @@
+# zsh
+export ZSH=~/.nix-profile/share/oh-my-zsh
 ZSH_THEME="josh"
-
-export ZSH="~/.oh-my-zsh"
+plugins=(git node golang)
 source $ZSH/oh-my-zsh.sh
 
-plugins=(git node golang)
+
+if [ -f ~/.aliases ]; then
+    source ~/.aliases
+fi
+    
 
 # source bash_profile
 if [ -f ~/.bash_profile ]; then 
@@ -43,26 +48,3 @@ export PATH=$PATH:/home/urip/.platformio/penv/bin
 # other env variables
 export EDITOR=nano
 
-# custom aliases
-alias zcfg="nano ~/.zshrc"
-alias zcfgs="source ~/.zshrc"
-alias cl="clear"
-alias getpid="xprop _NET_WM_PID | cut -d' ' -f3"
-alias cpp="cd /media/urip/Data/Koding/personal"
-alias cdd="cd ~/Downloads"
-alias sapi="sudo apt install"
-alias sapp="sudo apt purge"
-alias sapr="sudo apt remove"
-alias sapa="sudo apt autoremove"
-alias sapu="sudo apt update"
-alias snapi="sudo snap install"
-alias snapr="sudo snap remove"
-alias scrcpy="ADB=~/Android/Sdk/platform-tools/adb scrcpy"
-alias adbdv="adb devices"
-alias adbc="adb connect"
-alias adbdc="adb disconnect"
-alias open="nautilus"
-alias spd="speedtest"
-alias s="sudo"
-alias uber-apk-signer="java -jar ~/.uber-apk-signer.jar --apk"
-alias docker-explorer="docker run -it --rm=true"

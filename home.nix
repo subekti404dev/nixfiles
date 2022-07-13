@@ -7,6 +7,7 @@
   home.homeDirectory = "/home/urip";
 
   home.packages = [
+    pkgs.bat
     pkgs.jdk11
     pkgs.go
     pkgs.comma
@@ -17,11 +18,15 @@
     pkgs.yarn
     pkgs.flutter
     pkgs.nodePackages.pnpm
+    pkgs.oh-my-zsh
+    pkgs.zsh-powerlevel10k
+    pkgs.fzf
   ];
   
 
   # Raw configuration files
   home.file.".gitconfig".source = ./gitconfig;
+  home.file.".aliases".source = ./aliases;
   home.file.".zshrc".source = ./zshrc;
 
    programs.zsh = {
