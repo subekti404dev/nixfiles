@@ -7,6 +7,7 @@
   home.homeDirectory = "/home/urip";
 
   home.packages = [
+    pkgs.jdk11
     pkgs.go
     pkgs.comma
     pkgs.zsh
