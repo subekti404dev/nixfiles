@@ -9,9 +9,10 @@
   home.packages = [
     pkgs.nix
     pkgs.go
-    pkgs.speedtest-cli
     pkgs.comma
+    pkgs.zsh
     pkgs.git
+    pkgs.speedtest-cli
     pkgs.nodejs-16_x
   ];
   
