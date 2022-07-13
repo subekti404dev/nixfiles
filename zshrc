@@ -131,23 +131,18 @@ export PATH=$PATH:$ANDROID_SDK/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-# export PATH=$PATH:/usr/local/go/bin
-# export PATH=$PATH:$HOME/go/bin
-export PATH=$PATH:/usr/local/flutter/bin
+
 export PATH=$PATH:$HOME/.bin
 export PATH=/snap/bin:$PATH
 export PATH=~/.bin:$PATH
-export PATH="$(yarn global bin):$PATH"
 export PATH=$PATH:~/.local/bin
-# export PATH="$PATH:$(go env GOPATH)/bin"
-# export GOPATH=$HOME/go
+export PATH="$PATH:$(go env GOPATH)/bin"
+export GOPATH=$HOME/go
 export PATH=$PATH:/home/urip/.platformio/penv/bin
 
 export USE_CCACHE=1
 export CCACHE_EXEC=/usr/bin/ccache
 export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
-# -e 
-# if [ -e /home/urip/.nix-profile/etc/profile.d/nix.sh ]; then . /home/urip/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

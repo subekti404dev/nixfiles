@@ -14,6 +14,8 @@
     pkgs.speedtest-cli
     pkgs.nodejs-16_x
     pkgs.yarn
+    pkgs.flutter
+    pkgs.nodePackages.pnpm
   ];
   
 
