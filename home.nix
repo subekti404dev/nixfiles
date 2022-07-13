@@ -7,7 +7,6 @@
   home.homeDirectory = "/home/urip";
 
   home.packages = [
-    pkgs.nix
     pkgs.go
     pkgs.comma
     pkgs.zsh
