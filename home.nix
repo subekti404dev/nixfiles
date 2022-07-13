@@ -8,7 +8,6 @@
 
   home.packages = [
     pkgs.bat
-    pkgs.jdk11
     pkgs.go
     pkgs.comma
     pkgs.zsh
@@ -16,10 +15,8 @@
     pkgs.speedtest-cli
     pkgs.nodejs-16_x
     pkgs.yarn
-    pkgs.flutter
     pkgs.nodePackages.pnpm
     pkgs.oh-my-zsh
-    pkgs.zsh-powerlevel10k
     pkgs.fzf
   ];
   
