@@ -23,9 +23,9 @@
   
 
   # Raw configuration files
-  home.file.".gitconfig".source = ./gitconfig;
-  home.file.".aliases".source = ./aliases;
-  home.file.".zshrc".source = ./zshrc;
+  home.file.".gitconfig".source = ./dotfiles/gitconfig;
+  home.file.".aliases".source = ./dotfiles/aliases;
+  home.file.".zshrc".source = ./dotfiles/zshrc;
 
    programs.zsh = {
       enable = true;
