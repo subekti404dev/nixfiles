@@ -8,11 +8,12 @@
 
   home.packages = [
     pkgs.bat
+    pkgs.neofetch
+    pkgs.speedtest-cli
     pkgs.go
     pkgs.comma
     pkgs.zsh
     pkgs.git
-    pkgs.speedtest-cli
     pkgs.nodejs-16_x
     pkgs.yarn
     pkgs.nodePackages.pnpm
