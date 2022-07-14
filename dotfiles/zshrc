@@ -6,7 +6,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 if [ -f ~/.aliases ]; then
-    source ~/.aliases
+    . ~/.aliases
 fi
     
 
