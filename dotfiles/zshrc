@@ -42,4 +42,4 @@ export PATH=$PATH:/home/urip/.platformio/penv/bin
 
 # other env variables
 export EDITOR=nano
-
+export NIXPKGS_ALLOW_UNFREE=1

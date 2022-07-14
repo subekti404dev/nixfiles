@@ -9,7 +9,6 @@
   home.packages = [
     pkgs.bat
     pkgs.neofetch
-    pkgs.speedtest-cli
     pkgs.go
     pkgs.comma
     pkgs.zsh
@@ -19,6 +18,7 @@
     pkgs.nodePackages.pnpm
     pkgs.oh-my-zsh
     pkgs.fzf
+    pkgs.ookla-speedtest
   ];
   
 
