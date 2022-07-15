@@ -26,6 +26,6 @@ alias docker-explorer="docker run -it --rm=true"
 alias hms="home-manager switch"
 
 tf() {
-    echo  "uploading $1 ...\n"
-    curl https://oshi.at -F f="@$1" -F shorturl=1 -F randomizefn=1
+    echo  "uploading @$1 ...\n"
+    curl -F file="@$1" https://0x0.st
 }
