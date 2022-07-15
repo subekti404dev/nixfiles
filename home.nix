@@ -9,6 +9,7 @@
   home.packages = [
     pkgs.bat
     pkgs.neofetch
+    pkgs.sshpass
     pkgs.go
     pkgs.comma
     pkgs.zsh
