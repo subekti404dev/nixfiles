@@ -35,8 +35,6 @@ nix-env --set-flag priority 0 nix
 
 ## home switch
 ```bash
-home-manager switch
-# if fail try this
 export NIXPKGS_ALLOW_UNFREE=1 && home-manager switch
 ```
 
