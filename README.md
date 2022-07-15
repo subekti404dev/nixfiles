@@ -7,7 +7,6 @@ sudo curl -L https://nixos.org/nix/install | sh
 
 ## add path to env (for linux)
 ```bash
-sudo curl -L https://nixos.org/nix/install | sh &&\
 echo 'source ~/.nix-profile/etc/profile.d/nix.sh' >> ~/.bash_profile &&\
 echo 'export NIX_PATH=${NIX_PATH:+$NIX_PATH:}$HOME/.nix-defexpr/channels' >> ~/.bash_profile &&\
 source ~/.bash_profile
