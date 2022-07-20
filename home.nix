@@ -14,8 +14,7 @@
     pkgs.comma
     pkgs.zsh
     pkgs.git
-    pkgs.nodejs-16_x
-    pkgs.yarn
+    pkgs.nodejs-slim-14_x
     pkgs.nodePackages.pnpm
     pkgs.oh-my-zsh
     pkgs.fzf
