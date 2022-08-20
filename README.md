@@ -9,12 +9,14 @@ sudo curl -L https://nixos.org/nix/install | sh
 ```bash
 echo 'source ~/.nix-profile/etc/profile.d/nix.sh' >> ~/.bash_profile &&\
 echo 'export NIX_PATH=${NIX_PATH:+$NIX_PATH:}$HOME/.nix-defexpr/channels' >> ~/.bash_profile &&\
+echo 'export NIXPKGS_ALLOW_UNFREE=1' >> ~/.bash_profile &&\
 source ~/.bash_profile
 ```
 
 ## add path to env (for mac)
 ```bash
 echo 'export NIX_PATH=$HOME/.nix-defexpr/channels:/nix/var/nix/profiles/per-user/root/channels${NIX_PATH:+:$NIX_PATH}' >> ~/.bash_profile &&\
+echo 'export NIXPKGS_ALLOW_UNFREE=1' >> ~/.bash_profile &&\
 source ~/.bash_profile
 ```
 
@@ -35,7 +37,7 @@ nix-env --set-flag priority 0 nix
 
 ## home switch
 ```bash
-export NIXPKGS_ALLOW_UNFREE=1 && home-manager switch
+home-manager switch
 ```
 
 ## change shell to zsh
